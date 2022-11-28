@@ -1,5 +1,6 @@
 # Flask web hosting
-This project is related 
+This project is related to GUI server side hosting, where you can choose the template , fill the your information accordingly and publish your website within server, in subdomain.
+
 ## Features
 *	Create and delete your accout
 *	Login system
