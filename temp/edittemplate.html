@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/edittemplate.css">
+	<title>Edit template</title>
+	<link rel="shortcut icon" href="/static/ic.png">
+</head>
+<body>
+	<form method="POST" action="/back/dashboard/{{username}}/{{password}}"><button class="tb-btn">Back</button></form>
+	<form id="frm" method="POST" action="/edit/changes/{{username}}/{{password}}">
+		<p class="frm-p">Name</p>
+		<p><input class="frm-i" type="text" value="{{name}}" name="name"></p>
+		<hr>
+		<p class="frm-p">Description</p>
+		<p><textarea name="description" class="frm-i" style="height: 80px;" type="text">{{description}}</textarea></p>
+		<hr>
+		<p class="frm-p">Template name: {{template_no}}</p>
+		<p>
+			<select class="frm-i" name="template_no" value="{{template_no}}">
+				<option>Modern</option>
+				<option>Classic</option>
+				<option>Roman</option>
+			</select>
+		</p>
+		<p>
+			<center>
+				<button class="tb-btn">Make changes</button>
+			</center>
+		</p>
+	</form>
+</body>
+</html>

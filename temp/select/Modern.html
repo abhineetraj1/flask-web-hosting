@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{name}}</title>
+	<style type="text/css">
+		body{
+			margin: 0vh;
+			padding: 0vh;
+		}
+		.esr{
+			height: 100vh;
+			text-align: center;
+			width:100%;
+		}
+		.tt{
+			font-size: 35px;
+			font-family: Calibri;
+			font-weight: bold;
+		}
+		#frm{
+			width: 380px;
+			margin: 3px;
+		}
+		.gr{
+			background: #48c9b0;
+		}
+		.mt{
+			color: white;
+		}
+		.kt{
+			color: white;
+			font-size: 65px;
+		}
+		.frm-i{
+			width: 360px;
+			padding: 2px;
+			margin: 3px;
+			border: solid;
+			font-size: 20px;
+			border-radius: 9px;
+		}
+		.frm-btn{
+			background: white;
+			border-radius: 10px;
+			border:solid;
+			font-size: 20px;
+
+		}
+		.kt-btn{
+			background: white;
+			border: solid;
+			border-radius: 10px;
+			font-size: 30px;
+			padding: 3px;
+			margin: 4px;
+			font-family: Bahnschrift;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/static/modern.css">
+	<link rel="shortcut icon" href="static/ic.png">
+</head>
+<body>
+	<div class="esr gr">
+		<div class="kt">
+			<br><Br>
+			Hey, I am {{name}}
+			<br><Br>
+			<a href="#about"><button class="kt-btn">About me</button></a>
+			<a href="#contact"><button class="kt-btn">Contact me</button></a>
+		</div>
+	</div>
+	<div class="esr">
+		<p class="tt" id="about">About me</p>
+		<p class="con">{{description}}</p>
+	</div>
+	<div class="esr gr">
+		<p class="tt mt" id="contact">Contact</p>
+		<center>
+			<form method="POST" action="/" id="frm">
+				<input class="frm-i" placeholder="Enter your name" name="name">
+				<input class="frm-i" placeholder="Enter your name" name="name">
+				<textarea height="150px" class="frm-i" placeholder="Enter your message" name="message"></textarea>
+				<button class="frm-btn">Send</button>
+			</form>
+		</center>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.er{
+	font-size: 20px;
+	padding: 3px;
+	height: 25px;
+	width: 200px;
+	border: solid;
+	background: white;
+	border-radius: 10px;
+	margin: 4px;
+}
+#frm{
+	text-align: center;
+	padding: 5px;
+	width: 250px;
+	border: solid;
+	border-radius: 8px;
+	background: white;
+	height: 300px;
+}
+.frm-btn{
+	font-size: 20px;
+	background: black;
+	color: white;
+	border-color: black;
+	padding: 3px;
+	border: solid;
+	border-radius: 8px;
+}
+body{
+	font-family: Bahnschrift;
+	background: #18c765;
+	text-align: center;
+}

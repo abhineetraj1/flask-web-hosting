@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="shortcut icon" href="static/ic.png">
+	<link rel="stylesheet" type="text/css" href="static/login.css">
+</head>
+<body>
+	<form id="frm" method="POST" action="/login">
+		<p style="font-size: 25px;font-weight: bold;">Login :)</p>
+		<input class="er" type="text" name="username" placeholder="Enter username">
+		<input class="er" type="password" name="password" placeholder="Enter password">
+		<button class="frm-btn">Login</button>
+	</form>
+	<script type="text/javascript">
+		if ("{{error}}" != "none") {
+			alert("{{error}}");
+		}
+	</script>
+	<script type="text/javascript" src="static/login-script.js"></script>
+</body>
+</html>

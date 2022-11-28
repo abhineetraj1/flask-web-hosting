@@ -1,0 +1,14 @@
+body{
+	background: #48c9b0;
+}
+.tb-btn{
+	background: white;
+	color: black;
+	border: solid;
+	border-radius: 10px;
+	padding: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: 19px;
+	font-family: Cambria Math;
+}

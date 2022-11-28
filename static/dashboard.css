@@ -1,0 +1,75 @@
+.title{
+	font-size: 39px;
+	font-weight: bold;
+	font-family: Bahnschrift;
+}
+.tt{
+	font-size: 30px;
+	text-decoration-line: underline;
+	font-family: Bahnschrift;
+}
+.td-t{
+	font-family: Calibri;
+	font-weight: bold;
+}
+.td-v{
+	font-family: Cambria;
+}
+body{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+td{
+	font-size: 20px;
+}
+.tb-btn{
+	background: white;
+	color: black;
+	border: solid;
+	border-radius: 10px;
+	padding: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: 19px;
+	font-family: Cambria Math;
+}
+#dash{
+	border: solid;
+	margin: 4px;
+	background: #aed6f1;
+	width: 350px;
+	text-align: left;
+	padding: 4px;
+	border-radius: 12px;
+}
+.con-name{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 20px;
+}
+.con-email{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 20px;
+}
+.con-message{
+	font-family: Calibri;
+	font-weight: bold;
+	background: white;
+	font-size: 20px;
+	border: bold;
+	border-radius: 10px;
+	height: 150px;
+	width: 330px;
+}
+.con{
+	margin-left: 4px;
+	border-radius: 10px;
+	width: 350px;
+	text-align: left;
+	margin: 4px;
+	padding: 3px;
+	border: solid;
+	background: #a3e4d7;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{name}}</title>
+	<link rel="shortcut icon" href="static/ic.png">
+	<link rel="stylesheet" type="text/css" href="/static/classic.css">
+	<style type="text/css">
+		body{
+			background: black;
+		}
+		.it{
+			font-size: 20px;
+			border: solid;
+			border-radius: 10px;
+			background: white;
+			padding: 3px;
+			width: 300px;
+			margin: 1vh;
+		}
+		form{
+			color: white;
+			width: 350px;
+			padding: 1vh;
+		}
+		.btn{
+			background: white;
+			border: solid;
+			border-radius: 8px;
+			font-size: 20px;
+			padding: 3px;
+		}
+	</style>
+</head>
+<body background="black">
+	<p style="font-family: Bahnschrift;text-decoration: underline;font-size: 39px;color: white;text-align: center;">{{name}}</p>
+	<br>
+	<div style="font-family: Calibri;font-size: 20px;color: white;text-align: center;padding-left: 4px;padding-right: 4px;">
+		{{description}}
+	</div>
+	<p style="color: white;font-size: 30px;text-align: center;">Contact</p>
+	<center>
+		<form method="POST" action="/">
+			<input type="text" name="name" class="it" placeholder="Enter your name">
+			<input type="email" name="email" class="it" placeholder="Enter your email">
+			<textarea name="message" class="it" height="150px" placeholder="Enter your message"></textarea>
+			<center>
+				<button class="btn">Submit</button>
+			</center>
+		</form>
+	</center>
+</body>
+</html>
