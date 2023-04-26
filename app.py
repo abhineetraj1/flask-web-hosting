@@ -15,6 +15,7 @@ def index():
 	return render_template("index.html")
 
 @app.route("/", subdomain="<sdm>", methods=["GET","POST"])
+#This function is for subdomain directing, ie, when the username exists then it will the required template to the user
 def subdomain_index(sdm):
 	if (request.method == "GET"):
 		if (sdm not in os.listdir("accounts")):
@@ -37,8 +38,10 @@ def subdomain_index(sdm):
 			return render_template("select/"+w[1]+".html", name=w[0], description=w[2])
 
 @app.route("/signup", methods=["GET","POST"])
+#This function is for signup, where the user creates the account.
 def signup():
 	if (request.method == "POST"):
+		#It will request username, name and password from the form and if the folder name with that user name exists it  will show username already exist error, else it will create new folder with that username and store details inside that folder
 		e = [request.form["username"], request.form["password"], request.form["name"]]
 		if (e[0] in os.listdir("accounts")):
 			return render_template("signup.html", error="Account already exists!")
@@ -60,6 +63,7 @@ def signup():
 	else:
 		return render_template("signup.html", error="none")
 @app.route("/login", methods=["GET","POST"])
+#This function will help user to login. If the folder with name of username request from the form exists, then it will further verify the credentials written in a file inside that folder, else it will show user not found error
 def login():
 	if (request.method == "GET"):
 		return render_template("login.html", error="none")
@@ -79,6 +83,7 @@ def login():
 				return render_template("login.html", error="Wrong password!")
 
 @app.route("/back/dashboard/<username>/<password>", methods=["POST"])
+#This function will show all details required to show in dashboard (such as website view, contact info, change template, delete contact messages and others)
 def back_to_dashboard(username, password):
 	w = [username,password]
 	if (w[0] not in os.listdir("accounts")):
@@ -95,6 +100,7 @@ def back_to_dashboard(username, password):
 			return "Session expired"
 
 @app.route("/edit/template/<username>/<password>", methods=["POST"])
+#This function will change the template, after user verification
 def editTemplate(username, password):
 	w = [username,password]
 	if (w[0] not in os.listdir("accounts")):
@@ -107,6 +113,7 @@ def editTemplate(username, password):
 			return "Session expired"
 
 @app.route("/edit/changes/<username>/<password>", methods=["POST"])
+#This function will save the changes made in template
 def editChanges(username, password):
 	w = [username,password]
 	if (w[0] not in os.listdir("accounts")):
@@ -123,6 +130,7 @@ def editChanges(username, password):
 			return "Session expired"
 
 @app.route("/delete/contact/<username>/<id>", methods=["POST"])
+#This function will delete the contact messages of particular id, shown in dashboard
 def delete_contact(username,id):
 	try:
 		os.remove("accounts/"+username+"/contacts/"+id)
@@ -130,6 +138,7 @@ def delete_contact(username,id):
 	except:
 		return "x"
 @app.route("/delete", methods=["GET","POST"])
+#This function will delete the account, after user verification
 def delete():
 	if (request.method == "GET"):
 		return render_template("delete.html", error="none")
@@ -145,6 +154,7 @@ def delete():
 				return render_template("delete.html", error="Wrong password!")
 
 @app.errorhandler(404)
+#This function handles 404 error
 def er404(a):
 	return render_template("404.html")
 
