@@ -1,5 +1,6 @@
 # Flask web hosting
-This project is related to GUI server side hosting, where you can choose the template , fill the your information accordingly and publish your website within server, in subdomain.
+* This project is related to GUI server hosting, where you can choose different template , fill the your information accordingly and publish your website , in your desired subdomain.
+* Note:linux is preferable OS for deployment of this project
 
 ## Features
 *	Create and delete your accout
@@ -9,25 +10,28 @@ This project is related to GUI server side hosting, where you can choose the tem
 *	Contact form
 *	Views stats (no. of views)
 *	The website template will be provide as from server side only
-*	No need to purchase domain, your website will be publushed in the subdomain only (example: username.domain.com)
+*	Website will be published in the subdomain only (example: username.domain.com)
 
 ## Installation
 *	Download python3.10
-*	Install flask python library
+*	Install required libraries
 ```
-pip3 install flask
+pip3 install -r requirements.txt
 ```
 ## Execution
-*	Download the source code.
-*	Extract the file and open terminal in that folder
-*	Open terminal and run these code
+*	Download the source code:-
 ```
-flask run
+git clone https://github.com/abhineetraj1/flask-web-hosting
+cd flask-web-hosting
 ```
-*	Open your default browser and open localhost:5000 url in that browser
+*	Open terminal and run flask server
+```
+flask run -h localhost:5000
+```
+*	Open your default browser and navigate to localhost:5000 in that browser
 
 ## Languages and tools used:
 <p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-## Author
+## Developer
 *	[abhineetraj1](http://github.com/abhineetraj1)
