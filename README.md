@@ -26,7 +26,7 @@ cd flask-web-hosting
 ```
 *	Open terminal and run flask server
 ```
-flask run -h localhost:5000
+flask run -h localhost -p 5000
 ```
 *	Open your default browser and navigate to localhost:5000 in that browser
 
