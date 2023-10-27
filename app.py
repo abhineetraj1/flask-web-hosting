@@ -34,7 +34,7 @@ def subdomain_index(sdm):
 			open("accounts/"+sdm+"/views.txt","w").write(str(mk))
 			t = [request.form["name"], request.form["email"], request.form["message"]]
 			k = rndm()
-			open("accounts/"+sdm+"/contacts/"+k+".txt","w").write(f"Name: {w[0]}\nEmail: {w[1]}\nMessage: {w[2]}")
+			open("accounts/"+sdm+"/contacts/"+k+".txt","w").write(f"Name: {t[0]}\nEmail: {t[1]}\nMessage: {t[2]}")
 			return render_template("select/"+w[1]+".html", name=w[0], description=w[2])
 
 @app.route("/signup", methods=["GET","POST"])
